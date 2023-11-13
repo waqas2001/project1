@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/contacts.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Games</a>
+            <div class="dropdown-content">
+                <a href="hangman.html">Hangman</a>
+                <a href="rockpaperscissor.html">Rock, Paper, Scissor</a>
+                <a href="tictactoe.html">Tic Tac Toe</a>
+                <a href="skipjack.html">Skipjack</a>
+                <a href="numberguessing.html">Number Guessing</a>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Leaderboard</a>
+    </div>
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p id="about">Introducing Mini-Games Playground, your go-to destination for a quick and enjoyable gaming experience. Select from a variety of five simple yet engaging online games, including classics like Hangman, Rock, Paper, Scissors, Tic Tac Toe, Skipjack, and Number Guessing.</p>
+        <form id="contact-form">
+            <label for="contact-type">I am contacting about:</label>
+            <select id="contact-type" name="contact-type">    <!-- dropdown -->
+                <option value="new-game-request">New Game Request</option>
+                <option value="report-bug">Report a Bug</option>
+            </select>
+
+            <label for="name">Name:</label>
+                <input type="text" id="name" required>   <!-- this 'required' will ask to fill the box-->
+            <label for="email">Email:</label>
+                <input type="email" id="email" required>  <!-- this 'required' will ask to fill the box-->
+            <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>  <!-- this 'required' will ask to fill the box-->
+            
+                <button type="submit" id="submit-button">Submit</button>
+        </form>
+        <div id="thank-you-message" class="hidden">
+            <p><span id="user-name"></span></p>
+        </div>
+    </div>
+    <script src="./assets/js/contacts.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./assets/css/tictactoe.css">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Games</a>
+            <div class="dropdown-content">
+                <a href="hangman.html">Hangman</a>
+                <a href="rockpaperscissor.html">Rock, Paper, Scissor</a>
+                <a href="tictactoe.html">Tic Tac Toe</a>
+                <a href="numberguessing.html">Number Guessing</a>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Leaderboard</a>
+    </div>
+    
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="instructions">
+            <p><b>How to play:</b> The goal is to be the first to form a line of three of your symbols (either "X" or "O") horizontally, vertically, or diagonally on the 3x3 grid.</p>
+        </div>
+        <div class="board" id="board">   <!-- 3x3 game board-->
+            <div class="cell" onclick="makeMove(this)"></div>  <!-- Empty box/ Did a bit research online-->
+            <div class="cell" onclick="makeMove(this)"></div>  <!-- Empty box-->
+            <div class="cell" onclick="makeMove(this)"></div>  <!-- Empty box-->
+            <div class="cell" onclick="makeMove(this)"></div>  <!-- Empty box-->
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+            <div class="cell" onclick="makeMove(this)"></div>
+        </div>
+        <div class="message" id="message"></div> <!-- Empty message-->
+        <button class="reset-button" onclick="resetBoard()">Reset</button> 
+    </div> 
+    <button class="gohome"><a href="index.html">Back to Home</a></button>   
+    <script src="./assets/js/tictactoe.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+git clone git@github.com:waqas2001/notes.git
+
+//upload changes
+git add .
+git commit -m " changes are made "
+git push
+
+git pull origin main    //download changes.
+
+git branch
+git status
+
+git checkout -b lec40
+git push origin lec40
+
+git config - Used to set configuration details like user name and email [3][5].
+git init - Initializes a new Git repository [3][5].
+git clone - Creates a copy of a remote repository [3][4].
+git add - Stages changes for commit [3][4].
+git commit - Saves staged changes [3][4].
+git status - Shows the status of changes [3][4].
+git branch - Lists, creates, or deletes branches [4][5].
+git checkout - Switches to a specified branch or commit [4][5].
+git merge - Combines changes from different branches [4][5].
+git remote - Manages remote repositories [4][6].
+
+ssh-keygen -t ed25519 -C "waqas2001@gmail.com"
+
+ssh-add C:\Users\YOU/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./assets/css/hangman.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Games</a>
+            <div class="dropdown-content">
+                <a href="hangman.html">Hangman</a>
+                <a href="rockpaperscissor.html">Rock, Paper, Scissor</a>
+                <a href="tictactoe.html">Tic Tac Toe</a>
+                <a href="numberguessing.html">Number Guessing</a>
+
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Leaderboard</a>
+    </div>
+
+    <div class="container">
+        <div><img src="./assets/img/hangmantitle.svg" height="200px" width="600px" id="responsive-image"></img>
+            <p><b>How to play:</b> You need to guess a word that will fill in the gaps below. You have a maximum of six incorrect guesses. Each time you guess a wrong letter, a part of a hanging figure will be added. A total of six incorrect guesses will complete the human body, and you will lose the game.</p>
+        </div>
+        <div class="hangman">
+            <img src="./assets/img/hangman0.svg" alt="Hangman" id="hangman-image">
+        </div>
+        <div class="word" id="word"></div>
+            <div class="keyboard">
+                <div class="letter" data-letter="A">A</div>
+                <div class="letter" data-letter="B">B</div>
+                <div class="letter" data-letter="C">C</div>
+                <div class="letter" data-letter="D">D</div>
+                <div class="letter" data-letter="E">E</div>
+                <div class="letter" data-letter="F">F</div>
+                <div class="letter" data-letter="G">G</div>
+                <div class="letter" data-letter="H">H</div>
+                <div class="letter" data-letter="I">I</div>
+                <div class="letter" data-letter="J">J</div>
+                <div class="letter" data-letter="K">K</div>
+                <div class="letter" data-letter="L">L</div>
+                <div class="letter" data-letter="M">M</div>
+                <div class="letter" data-letter="N">N</div>
+                <div class="letter" data-letter="O">O</div>
+                <div class="letter" data-letter="P">P</div>
+                <div class="letter" data-letter="Q">Q</div>
+                <div class="letter" data-letter="R">R</div>
+                <div class="letter" data-letter="S">S</div>
+                <div class="letter" data-letter="T">T</div>
+                <div class="letter" data-letter="U">U</div>
+                <div class="letter" data-letter="V">V</div>
+                <div class="letter" data-letter="W">W</div>
+                <div class="letter" data-letter="X">X</div>
+                <div class="letter" data-letter="Y">Y</div>
+                <div class="letter" data-letter="Z">Z</div>
+            </div>
+        <div id="message"></div>
+        <footer>
+            <button id="play-again">Play Again</button>
+        </footer>
+        <button class="gohome"><a href="index.html">Back to Home</a></button>
+    </div>
+    <script src="./assets/js/hangman.js"></script>
+</body>
+</html>

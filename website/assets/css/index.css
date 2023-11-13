@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: mistyrose;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white; /* text color white */
+    text-decoration: none;  /* to remove underline */
+    margin: 0 10px; /* no vertical mergin */
+    position: relative;
+    display: block;
+    padding: 5px 5px; /* around text */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* background color*/
+    color: black; /* text color*/
+}
+
+.dropdown {
+    position: relative; /* to squize drop down width relatively */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* to hide drop down contents in normal time */
+    position: absolute; /* only dropdown contents to drop and down */
+    background-color: #333;
+    min-width: 160px;
+    /*z-index: 1;*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;  /* since we set dropdown display 'none' above, this line let the the dropdown appears when hover works on Game */
+}
+
+.dropdown-content a {
+    color: white; /* text color*/
+    padding: 12px 16px;
+    text-decoration: none; /* No underline*/
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    text-emphasis-color: white;
+}
+
+.game-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+}
+
+article:hover {
+    background-color: #f0f0f0; /* to change the color of the box*/
+}
+
+.game-link {
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {  /* To adjust display for different screen size*/
+    .game-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        flex-basis: 100%;
+        margin: 20px auto;
+    }
+}
