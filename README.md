@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-// This is our first group project
-// today is Oct 18 2023
-### This is where you will find the HTML, CSS, and JS files
-
 Team Collaborators:
 
     Waqas Shahid / Hangman / Wed Developer
-    Shamima Nasrin Khan / Tic Tac Toe / Developed: home.html, tictactoe2.html, contacts.html
+    Shamima Nasrin Khan / Tic Tac Toe / Developed: index.html, tictactoe.html, contact.html
     Ksenia Isakov / Rock Paper Sissor / Web Developer
     
 
