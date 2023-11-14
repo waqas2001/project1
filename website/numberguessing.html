@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../games/numberguessing/styles.css" />
     <link rel="stylesheet" href="../games/numberguessing/gnstyle.css" />
     
-    <title>Mini Games</title>
+    <title>Samane Razmi</title>
 </head>
 <body>
     <div class="navbar">
@@ -19,7 +19,6 @@
                 <a href="rockpaperscissor.html">Rock, Paper, Scissor</a>
                 <a href="tictactoe.html">Tic Tac Toe</a>
                 <a href="numberguessing.html">Number Guessing</a>
-
             </div>
         </div>
         <a href="contacts.html">Contact</a>
@@ -27,50 +26,65 @@
         <a href="#">Leaderboard</a>
     </div>
 
+    <header>
+        <a class="logo" style="margin-left:40%;">Gussing Number...</a>
+        <div class="menuToggle"></div>
+        <div class="theme-selector" style="margin-left:95%;margin-top:10px">
+            <select id="theme">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+    </header>
 
-    
-<header>
-    <div class="theme-selector" style="margin-right:95%;margin-top:10px">
-        <select id="theme">
-          <option value="dark">Dark</option>
-          <option value="light">Light</option>
-        </select>
-    </div>
-    <a href="#" class="logo">Mini Games</a>
-    <div class="menuToggle"></div>
-  
-    </nav>
-</header>
-<div id="wrapper2" style="margin-top: 180px;">
-<div class="container">
-    <div class="container-wrapper">
-        <button type="button" class="btn btn-again">PlayAgain</button>
-        <p>Between 1 and 10</p>
-    </div>
-    <h2>Guessing Number Game</h2>
-    <p class="hide_num" style="font-size: 20px;">?</p>
-    <p class="message">Start Playing....</p>
-    <div class="number_data">
-        <form>
-            <input type="number" placeholder="Enter your Num please:" class="input_num">
-            <button type="button" class="btn btn_check">Check it Now!</button>
-        </form>
-    
-    <div class="Content">
-        <p>Score:<span class="score">10</span></p>
-        <p>HighScore:<span class="high-score">10</span></p>
-    </div>
-</div>
-</div>
-</div><!--end wrapper-->
-<script>
-    let menuToggle=document.querySelector('.menuToggle');
-    let header=document.querySelector('header');
-    menuToggle.onclick=function(){
-        header.classList.toggle('active');
-    }
-</script>
+    <div id="wrapper2" style="margin-top: 180px;">
+        <div class="container">
+            <div class="container-wrapper">
+                <button type="button" class="btn btn-again">Play Again</button>
+                <p>Between 1 and 10</p>
+            </div>
+            <div class="description">
+                <div class="left-side">
+                    <h2>Guessing Number Game</h2>
+                </div>
+                <div class="right-side">
+                    <!-- Add your content here -->
+                </div>
+            </div>
+            <p class="hide_num" style="font-size: 20px;">?</p>
+            <p class="message">Start Playing....</p>
+            <div class="number_data">
+                <form>
+                    <input type="number" placeholder="Enter your Num please:" class="input_num">
+                    <button type="button" class="btn btn_check">Check it Now!</button>
+                </form>
+                <div class="Content">
+                    <p>Score:<span class="score">10</span></p>
+                    <p>HighScore:<span class="high-score">10</span></p>
+                </div>
+            </div>
+        </div>
+    </div><!--end wrapper-->
 
+    <div id="side-part">
+        <div class="step-description">
+            <h3>Step 1: Guess a Number</h3>
+            <p>Enter a number between 1 and 10 in the text box.</p>
+        </div>
+        <div class="step-description">
+            <h3>Step 2: Start Playing</h3>
+            <p>Click the "Check it Now" button to start a new game.</p>
+        </div>
+        <div class="step-description">
+            <h3>Step 3: Show your Score</h3>
+            <p>You can see your score from the number you entered</p>
+        </div>
+        <div class="step-description">
+            <h3>Step 4: Win or Lose</h3>
+            <p>If your guess is correct, you win the game. Otherwise, keep trying to guess the correct number.</p>
+        </div>
+    </div>
+
+    <script src="../games/numberguessing/gn.js"></script>
 </body>
 </html>
-<script src="gn.js"></script>
