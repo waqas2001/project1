@@ -6,7 +6,7 @@
 Team Collaborators:
 
     Waqas Shahid / Hangman / Wed Developer
-    Shamima Nasrin Khan / Tic Tac Toe / Developed: home.html, hangman.html, tictactoe2.html, rockpaperscissor.html, contacts.html
+    Shamima Nasrin Khan / Tic Tac Toe / Developed: home.html, tictactoe2.html, contacts.html
     Ksenia Isakov / Rock Paper Sissor / Web Developer
     
 
