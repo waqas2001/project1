@@ -3,6 +3,7 @@ Team Collaborators:
     Waqas Shahid / Hangman / Wed Developer
     Shamima Nasrin Khan / Tic Tac Toe / Developed: index.html, tictactoe.html, contact.html
     Ksenia Isakov / Rock Paper Sissor / Web Developer
+    Samaneh Razmi ( nick name: Sama ) / Number Guessing / web Developer
     
 
 Project: 1
